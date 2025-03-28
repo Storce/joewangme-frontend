@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import myImage from '../../public/me-about.jpg'; // Import the image
 
 export default function About() {

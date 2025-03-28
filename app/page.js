@@ -2,7 +2,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
 // Import images (adjust the paths if needed)
