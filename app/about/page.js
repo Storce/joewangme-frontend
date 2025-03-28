@@ -8,10 +8,10 @@ export default function About() {
             <div className="paragraph"> {/* Limit the width of the text box and justify text */}
                 <h1 className="heading1" style={{ marginBottom: '0.5rem' }}>About Me</h1> {/* Apply heading1 class */}
                 <p className="paragraph" style={{ marginBottom: '1rem' }}>
-                    I am a Computer Science student currently residing in the U.S., Berkeley, CA. I've also lived in Shanghai (China) and São Paulo (Brazil) at different moments of my life. I speak fluent Portuguese, Mandarin, English, some intermediate Spanish, and Shanghainese.
+                    I am a Computer Science student currently residing in the U.S., Berkeley, CA. I&apos;ve also lived in Shanghai (China) and São Paulo (Brazil) at different moments of my life. I speak fluent Portuguese, Mandarin, English, some intermediate Spanish, and Shanghainese.
                 </p>
                 <p className="paragraph" style={{ marginBottom: '1rem' }}>
-                    I am really into <b>Linux</b> and <b>computer systems and infrastructure</b>. I run my own homelab and teach a class on system administration. I also really like mathematics and have competed in olympiads at national levels. Some cool classes I've enjoyed at Berkeley are EE120 Signal Processing, and EE122 Communication Networks.
+                    I am really into <b>Linux</b> and <b>computer systems and infrastructure</b>. I run my own homelab and teach a class on system administration. I also really like mathematics and have competed in olympiads at national levels. Some cool classes I&apos;ve enjoyed at Berkeley are EE120 Signal Processing, and EE122 Communication Networks.
                 </p>
                 <p className="paragraph" style={{ marginBottom: '1rem' }}>
                     I do a lot of things for the{' '}
