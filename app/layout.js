@@ -1,15 +1,19 @@
 // app/layout.js
+"use client";
 import Link from 'next/link';
+import { usePathname } from 'next/navigation'; // Import usePathname
 import './globals.css';
 
-export const metadata = {
-    title: {
-        default: 'Joe Wang | :D',
-    },
-    description: 'My personal website',
-};
+// export const metadata = {
+//     title: {
+//         default: 'Joe Wang | :D',
+//     },
+//     description: 'Personal website of Joe Wang, a Computer Science undergrad at UC Berkeley.',
+// };
 
 export default function RootLayout({ children }) {
+    const pathname = usePathname(); // Get the current route
+
     return (
         <html lang="en">
             <body style={{ backgroundColor: '#F5EEDC', color: 'black' }}>
@@ -26,8 +30,8 @@ export default function RootLayout({ children }) {
                     <Link href="/about">About</Link>
                     <Link href="/blog">Blog</Link>
                 </nav>
-                <div className="page-transition">
-                    {/* Use CSS animations for transitions */}
+                <div key={pathname} className="page-transition">
+                    {/* Use key based on pathname to trigger animation */}
                     {children}
                 </div>
             </body>

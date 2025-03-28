@@ -83,11 +83,11 @@ nav a:hover {
 }
 
 .page-transition {
-  animation: fadeInScale 1.5s ease-in-out;
+  animation: fadeInScale 0.2s ease-in-out;
 }
 
 .page-transition.animating {
-  animation: fadeOutScale 0.5s ease-in-out;
+  animation: fadeOutScale 0.2s ease-in-out;
   /* Add fade-out animation */
 }
 
