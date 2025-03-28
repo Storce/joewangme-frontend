@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 2, "column": 0}, "map": {"version":3,"sources":["file:///home/s/st/storce/projects/joewangme/frontend/app/globals.css"],"sourcesContent":["/* app/globals.css */\n@import url('https://fonts.googleapis.com/css2?family=Winky+Sans:wght@200;400&display=swap');\n\nbody {\n  margin: 0;\n  font-family: 'Winky Sans', sans-serif;\n}\n\n/* Style nav links */\nnav a {\n  color: #F5EEDC;\n  text-decoration: none;\n  padding: 0.5rem 1rem;\n  transition: background-color 0.3s ease;\n  font-size: 1.5rem;\n}\n\nnav a:hover {\n  background-color: #DDA853;\n  border-radius: 4px;\n}\n\n/* header1 class for main headings */\n.header1 {\n  font-size: 2rem;\n  font-weight: 400;\n  margin-bottom: 0.5rem;\n}\n\n/* italic subtitles class */\n.italic-subtitles {\n  font-size: 1rem;\n  font-style: italic;\n  margin-top: 0;\n  margin-bottom: 0;\n  font-weight: 400;\n}\n\n.paragraph {\n  font-size: 1rem;\n  margin: 0.5rem auto;\n  /* Center the paragraph horizontally */\n  line-height: 1.5;\n  max-width: 600px;\n  /* Constrain the maximum width */\n  width: 90%;\n  /* Make it responsive by using a percentage width */\n}"],"names":[],"mappings":"AAGA;;;;;AAMA;;;;;;;;AAQA;;;;;AAMA;;;;;;AAOA;;;;;;;;AAQA","debugId":null}}]
+}

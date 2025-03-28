@@ -1,11 +1,7 @@
-'use client';
-// app/blog/page.js
+// app/page.js
+import { redirect } from 'next/navigation';
 
-export default function Blog() {
-    return (
-        <main style={{ textAlign: 'center' }}>
-            <h1>Blog</h1>
-            <p>Welcome to our blog. Stay tuned for updates and articles!</p>
-        </main>
-    );
+export default function Page() {
+    redirect('https://blog.joewang.me');
+    return null; // This won't actually render since redirect() triggers an immediate navigation
 }
