@@ -2,7 +2,7 @@
 
 export default function About() {
     return (
-        <main style={{ textAlign: 'center' }}>
+        <main className="mainContainer">
             <div className="paragraph"> {/* Limit the width of the text box and justify text */}
                 <h1 className="heading1" style={{ marginBottom: '0.5rem' }}>About Me</h1> {/* Apply heading1 class */}
                 <p className="paragraph" style={{ marginBottom: '1rem' }}>
@@ -17,7 +17,7 @@ export default function About() {
                         href="https://ocf.io"  // Replace with the actual URL
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ color: '#007BFF', textDecoration: 'none' }} // Optional: Customize link appearance
+                        style={{ color: '#27548A', textDecoration: 'none' }} // Optional: Customize link appearance
                     >
                         Open Computing Facility
                     </a>{' '}
@@ -26,7 +26,7 @@ export default function About() {
                         href="https://ocf.io/github"  // Replace with the actual URL
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ color: '#007BFF', textDecoration: 'none' }} // Optional: Customize link appearance
+                        style={{ color: '#27548A', textDecoration: 'none' }} // Optional: Customize link appearance
                     >
                         Github
                     </a>
@@ -38,19 +38,19 @@ export default function About() {
                         href="https://en.wikipedia.org/wiki/Stellaris_(video_game)"  // Replace with the actual URL
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ color: '#007BFF', textDecoration: 'none' }} // Optional: Customize link appearance
+                        style={{ color: '#27548A', textDecoration: 'none' }} // Optional: Customize link appearance
                     > Stellaris</a>,
                     <a
                         href="https://starcraft2.blizzard.com/en-us/"  // Replace with the actual URL
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ color: '#007BFF', textDecoration: 'none' }} // Optional: Customize link appearance
+                        style={{ color: '#27548A', textDecoration: 'none' }} // Optional: Customize link appearance
                     > StarCraft II</a>, and
                     <a
                         href="https://terraria.org/"  // Replace with the actual URL
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ color: '#007BFF', textDecoration: 'none' }} // Optional: Customize link appearance
+                        style={{ color: '#27548A', textDecoration: 'none' }} // Optional: Customize link appearance
                     > Terraria</a>.
                     I also love tennis, piano and cooking.
                 </p>
@@ -61,10 +61,9 @@ export default function About() {
                     display: 'inline-block',
                     marginBottom: '1rem',
                 }}>
-                    <img src="./me-about.jpg" alt="Joe Wang" style={{ width: '300px', height: 'auto' }} /> {/* Made the image smaller */}
+                    <img src="/me-about.jpg" alt="Joe Wang" style={{ width: '300px', height: 'auto' }} /> {/* Made the image smaller */}
                 </div>
             </div>
         </main>
     );
 }
-

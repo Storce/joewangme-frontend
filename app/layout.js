@@ -3,8 +3,10 @@ import Link from 'next/link';
 import './globals.css';
 
 export const metadata = {
-    title: 'Joe Wang | :D',
-    description: 'Joe Wang\'s Person Website',
+    title: {
+        default: 'Joe Wang | :D',
+    },
+    description: 'My personal website',
 };
 
 export default function RootLayout({ children }) {
@@ -24,7 +26,10 @@ export default function RootLayout({ children }) {
                     <Link href="/about">About</Link>
                     <Link href="/blog">Blog</Link>
                 </nav>
-                <div style={{ margin: '2rem' }}>{children}</div>
+                <div className="page-transition">
+                    {/* Use CSS animations for transitions */}
+                    {children}
+                </div>
             </body>
         </html>
     );

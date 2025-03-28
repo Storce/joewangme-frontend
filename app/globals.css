@@ -46,3 +46,73 @@ nav a:hover {
   width: 90%;
   /* Make it responsive by using a percentage width */
 }
+
+.paragraph-blog {
+  font-size: 1rem;
+  margin: 0.5rem auto;
+  /* Center the paragraph horizontally */
+  line-height: 1.5;
+  max-width: 600px;
+  /* Constrain the maximum width */
+  width: 90%;
+  /* Make it responsive by using a percentage width */
+  text-align: justify;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 0rem;
+}
+
+.mainContainer>div {
+  margin: 0 auto;
+}
+
+.blog-title-link {
+  color: #27548A;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.blog-title-link:hover {
+  text-decoration: underline;
+  color: #DDA853;
+}
+
+.page-transition {
+  animation: fadeInScale 1.5s ease-in-out;
+}
+
+.page-transition.animating {
+  animation: fadeOutScale 0.5s ease-in-out;
+  /* Add fade-out animation */
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+    /* Start slightly smaller */
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    /* End at normal size */
+  }
+}
+
+@keyframes fadeOutScale {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}

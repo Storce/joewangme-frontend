@@ -21,7 +21,7 @@ export default function Home() {
     };
 
     return (
-        <main style={{ padding: '0rem', textAlign: 'center', maxWidth: '500px', margin: '0 auto' }}>
+        <main className="mainContainer">
             <h1 style={{ marginBottom: '0.5rem' }}>Hi! I&apos;m Joe</h1>
             <h2 className="italic-subtitles" style={{ marginTop: '0rem', marginBottom: '0rem' }}>
                 I also go by Zezhou, and my username Storce.
