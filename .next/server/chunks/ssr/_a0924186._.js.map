@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 24, "column": 0}, "map": {"version":3,"sources":["file:///home/s/st/storce/projects/joewangme/frontend/app/blog/page.js"],"sourcesContent":["// app/page.js\nimport { redirect } from 'next/navigation';\n\nexport default function Page() {\n    redirect('https://blog.joewang.me');\n    return null; // This won't actually render since redirect() triggers an immediate navigation\n}\n"],"names":[],"mappings":"AAAA,cAAc;;;;AACd;AAAA;;AAEe,SAAS;IACpB,CAAA,GAAA,qLAAA,CAAA,WAAQ,AAAD,EAAE;IACT,OAAO,MAAM,+EAA+E;AAChG","debugId":null}}]
-}
