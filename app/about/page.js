@@ -57,7 +57,7 @@ export default function About() {
                     I also love tennis, piano and cooking.
                 </p>
                 <div style={{ padding: '1rem' }}>
-                    <Image src={myImage} alt="Joe Wang" style={{ width: '300px', height: 'auto' }} /> {/* Made the image smaller */}
+                    <img src={myImage} alt="Joe Wang" style={{ width: '300px', height: 'auto' }} /> {/* Made the image smaller */}
                 </div>
             </div>
         </main>

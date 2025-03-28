@@ -41,7 +41,7 @@ export default function Home() {
                     marginBottom: '1rem',
                 }}
             >
-                <Image
+                <img
                     src={myImage}
                     alt="Joe Wang"
                     width={300}
