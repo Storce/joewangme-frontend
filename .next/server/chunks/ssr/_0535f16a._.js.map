@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/s/st/storce/projects/joewangme/frontend/app/blog/page.js"],"sourcesContent":["'use client';\n// app/blog/page.js\n\nexport default function Blog() {\n    return (\n        <main style={{ textAlign: 'center' }}>\n            <h1>Blog</h1>\n            <p>Welcome to our blog. Stay tuned for updates and articles!</p>\n        </main>\n    );\n}\n"],"names":[],"mappings":";;;;AAAA;;AAGe,SAAS;IACpB,qBACI,8OAAC;QAAK,OAAO;YAAE,WAAW;QAAS;;0BAC/B,8OAAC;0BAAG;;;;;;0BACJ,8OAAC;0BAAE;;;;;;;;;;;;AAGf","debugId":null}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file:///home/s/st/storce/projects/joewangme/frontend/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-ssr'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
+}

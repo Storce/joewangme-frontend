@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///home/s/st/storce/projects/joewangme/frontend/app/layout.js"],"sourcesContent":["// app/layout.js\nimport './globals.css';\n\nexport const metadata = {\n    title: 'My Next.js App',\n    description: 'A Next.js application using the app directory.',\n};\n\nexport default function RootLayout({ children }) {\n    return (\n        <html lang=\"en\">\n            <body>{children}</body>\n        </html>\n    );\n}\n"],"names":[],"mappings":"AAAA,gBAAgB;;;;;;;;AAGT,MAAM,WAAW;IACpB,OAAO;IACP,aAAa;AACjB;AAEe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC3C,qBACI,8OAAC;QAAK,MAAK;kBACP,cAAA,8OAAC;sBAAM;;;;;;;;;;;AAGnB","debugId":null}},
+    {"offset": {"line": 40, "column": 0}, "map": {"version":3,"sources":["file:///home/s/st/storce/projects/joewangme/frontend/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-rsc'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,4HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0],"debugId":null}}]
+}
