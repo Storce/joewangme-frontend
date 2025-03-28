@@ -28,4 +28,4 @@ jobs:
     - run: ls
     - name: Sync folders
       run: 
-        sshpass -p "${{ secrets.SSH_PASSWD }}" rsync -zvr -e "ssh -o StrictHostKeyChecking=no" dist/ "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.HOST_PATH }}"
+        sshpass -p "${{ secrets.SSH_PASSWD }}" rsync -zvr -e "ssh -o StrictHostKeyChecking=no" out/ "${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:${{ secrets.HOST_PATH }}"
