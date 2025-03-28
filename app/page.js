@@ -4,8 +4,6 @@
 import { useState } from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 
-// Import images (adjust the paths if needed)
-import myImage from '../public/me.jpg';
 
 export default function Home() {
     const [notification, setNotification] = useState('');
@@ -41,7 +39,7 @@ export default function Home() {
                 }}
             >
                 <img
-                    src={myImage}
+                    src="./me.jpg"
                     alt="Joe Wang"
                     width={300}
                     height={300}

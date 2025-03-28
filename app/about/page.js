@@ -1,5 +1,4 @@
 'use client';
-import myImage from '../../public/me-about.jpg'; // Import the image
 
 export default function About() {
     return (
@@ -56,7 +55,7 @@ export default function About() {
                     I also love tennis, piano and cooking.
                 </p>
                 <div style={{ padding: '1rem' }}>
-                    <img src={myImage} alt="Joe Wang" style={{ width: '300px', height: 'auto' }} /> {/* Made the image smaller */}
+                    <img src="./me-about.jpg" alt="Joe Wang" style={{ width: '300px', height: 'auto' }} /> {/* Made the image smaller */}
                 </div>
             </div>
         </main>
