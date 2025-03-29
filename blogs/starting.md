@@ -4,7 +4,7 @@ date: "2025-03-28"
 
 ---
 
-I started writing for fun in fifth grade, when I got my first diary. It was a light-green, small notebook with hard cover. I wrote things in Mandarin, mostly documenting littles things on a whim. My second diary was a white-and-blue fabric covered notebook. I started writing in Portuguese. I wrote about all my troubles and reflections in secondary school. As I loved to the US for college, I moved digital. I started writing in English, and used my essays to reflect about deeper thoughts. Their lengths vary a lot, anything from 20 to 1000 words.
+I started writing for fun in fifth grade, when I got my first diary. It was a light-green, small notebook with hard cover. I wrote things in Mandarin, mostly documenting littles things on a whim. My second diary was a white-and-blue fabric covered notebook. I started writing in Portuguese. I wrote about all my troubles and reflections in secondary school. As I moved to the US for college, I moved digital. I started writing in English, and used my essays to reflect about deeper thoughts. Their lengths vary a lot, anything from 20 to 1000 words.
 
 I hate writing for class. Essays were not my strong suit, partially because I had to juggle a few languages. However, I’ve always enjoyed writing for myself: I don’t have to worry about following a structure, using precise grammar, or making things clear for other readers. Writing for myself is like dumping everything in my head onto a paper, effortless. 
 
