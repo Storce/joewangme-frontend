@@ -31,7 +31,6 @@ export default function RootLayout({ children }) {
                 >
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
-                    <Link href="/blog">Blog</Link>
                 </nav>
                 <div key={pathname} className="page-transition">
                     {/* Use key based on pathname to trigger animation */}
