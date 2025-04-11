@@ -92,7 +92,7 @@ export default function Home() {
                     <p style={{ marginBottom: '-0.8rem' }}>
                         <FaGithub /> GitHub:{' '}
                     </p>
-                    <p className="paragraph" style={{ marginBottom: '0rem' }}>
+                    <p className="paragraph" style={{ marginBottom: '1rem' }}>
                         <a
                             href="https://github.com/storce"
                             target="_blank"

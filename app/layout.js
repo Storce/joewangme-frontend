@@ -1,41 +1,50 @@
-// app/layout.js
-"use client";
-import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Import usePathname
 import './globals.css';
+import Nav from './components/Nav'; // adjust path if needed
 
-// export const metadata = {
-//     title: {
-//         default: 'Joe Wang | :D',
-//     },
-//     description: 'Personal website of Joe Wang, a Computer Science undergrad at UC Berkeley.',
-// };
+
+export const metadata = {
+    title: {
+        default: 'Joe Wang',
+        template: '%s | Joe Wang',
+    },
+    description:
+        'I am Joe, a Computer Science student at UC Berkeley and General Manager at the Open Computing Facility. I am enthusiastic about Linux and computer infrastructure.',
+    keywords: [
+        'Joe Wang',
+        'UC Berkeley',
+        'Computer Science',
+        'Open Computing Facility',
+        'Linux',
+        'Brazil',
+        'Brazilian',
+    ],
+    metadataBase: new URL('https://joewang.me'),
+    alternates: {
+        canonical: '/',
+    },
+    openGraph: {
+        title: 'Joe Wang',
+        description:
+            'I am Joe, a Computer Science student at UC Berkeley and General Manager at the Open Computing Facility. I am enthusiastic about Linux and computer infrastructure.',
+        url: 'https://joewang.me',
+        siteName: 'Joe Wang',
+        locale: 'en_US',
+        type: 'website',
+    },
+    robots: {
+        index: true,
+        follow: true,
+        nocache: false,
+    },
+};
+
 
 export default function RootLayout({ children }) {
-    const pathname = usePathname(); // Get the current route
-
     return (
         <html lang="en">
-            <head>
-                <link rel="icon" href="/favicon.ico" />
-            </head>
             <body style={{ backgroundColor: '#F5EEDC', color: 'black' }}>
-                <nav
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        gap: '2rem',
-                        padding: '1rem 2rem',
-                        background: '#183B4E',
-                    }}
-                >
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About</Link>
-                </nav>
-                <div key={pathname} className="page-transition">
-                    {/* Use key based on pathname to trigger animation */}
-                    {children}
-                </div>
+                <Nav />
+                <div className="page-transition">{children}</div>
             </body>
         </html>
     );

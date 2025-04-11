@@ -59,7 +59,7 @@ export default function About() {
                     border: '2px dashed rgba(24, 59, 78, 0.63)', // Adjusted border transparency
                     borderRadius: '8px',
                     display: 'inline-block',
-                    marginBottom: '1rem',
+                    marginBottom: '2rem',
                 }}>
                     <img src="/me-about.jpg" alt="Joe Wang" style={{ width: '300px', height: 'auto' }} /> {/* Made the image smaller */}
                 </div>
