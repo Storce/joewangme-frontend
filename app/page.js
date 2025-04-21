@@ -23,7 +23,7 @@ export default function Home() {
                     maxWidth: '600px',
                     width: '50%',
                 }} >
-                <h1 style={{ marginBottom: '0.5rem', marginTop: '3rem' }}>Hi! I&apos;m Joe</h1>
+                <h1 style={{ marginBottom: '0.5rem', marginTop: '1.3rem' }}>Hi! I&apos;m Joe</h1>
                 <h2 className="italic-subtitles" style={{ marginTop: '0rem', marginBottom: '0rem' }}>
                     I also go by Zezhou, and my username Storce.
                 </h2>
@@ -125,7 +125,7 @@ export default function Home() {
                                 <a href="https://ocf.berkeley.edu" target="_blank" rel="noopener noreferrer">
                                     <Image src="./buddy/ocf.png" alt="OCF" width={88} height={31} />
                                 </a>
-                                <a href="https://jaysa.net" target="_blank" rel="noopener noreferrer" style={{ marginBottom: '4rem', }}>
+                                <a href="https://jaysa.net" target="_blank" rel="noopener noreferrer" style={{ marginBottom: '2rem', }}>
                                     <Image src="./buddy/jaysa.jpg" alt="Jaysa" width={88} height={31} />
                                 </a>
 

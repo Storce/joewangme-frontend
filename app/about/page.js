@@ -48,7 +48,7 @@ export default function About() {
                         >
                             Github
                         </a>
-                        ), where I spend an unhealthy amount of time. As of January 2024, I serve as the Co-General Manager, contributing both technically and administratively.
+                        ), where I spend an unhealthy amount of time. At the OCF, we run a powerful Linux computer cluster serving 45K students and faculty at Berkeley. As of Spring 2025, I serve as the Co-General Manager, contributing both technically and administratively.
                     </p>
                     <p className="paragraph" style={{ marginBottom: '1rem' }}>
                         In my spare time, I enjoy games like
