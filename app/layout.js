@@ -15,6 +15,8 @@ export const metadata = {
         'Computer Science',
         'Open Computing Facility',
         'Linux',
+        'Computer Infrastructure',
+        'System Design',
         'Brazil',
         'Brazilian',
     ],
@@ -44,7 +46,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body style={{ backgroundColor: '#F5EEDC', color: 'black' }}>
                 <Nav />
-                <div className="page-transition">{children}</div>
+                {children}
             </body>
         </html>
     );

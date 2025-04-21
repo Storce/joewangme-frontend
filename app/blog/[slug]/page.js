@@ -33,11 +33,12 @@ async function getPostData(slug) {
 
 // Static params
 export async function generateStaticParams() {
-    const posts = getSortedPostsData();
+    const posts = await getSortedPostsData();
     return posts.map(post => ({
-        slug: post.id,
+        params: { slug: post.id },
     }));
 }
+
 
 // Post page
 export default async function PostPage({ params }) {

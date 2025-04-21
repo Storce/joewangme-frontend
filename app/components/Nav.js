@@ -14,7 +14,7 @@ export default function Nav() {
                 justifyContent: 'center',
                 gap: '2rem',
                 padding: '1rem 2rem',
-                background: '#183B4E',
+                background: '#050524',
             }}
         >
             <Link href="/">Home</Link>

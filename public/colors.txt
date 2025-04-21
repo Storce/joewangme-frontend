@@ -1,0 +1,11 @@
+Light: 253 241 160
+Dark: 5 5 36
+Orange: 247, 188, 69
+Purple: 35, 10, 54
+White: 245, 238, 220
+
+- **Light:** `#FDF1A0`  
+- **Dark:** `#050524`  
+- **Orange:** `#F7BC45`  
+- **Purple:** `#230A36`
+White: f5eedc
