@@ -31,21 +31,22 @@ export default function Home() {
                     I am a Computer Science undergrad at UC Berkeley.
                 </p>
 
-                <div
-                    style={{
-                        padding: '1rem',
-                        border: '2px dashed #050524',
-                        borderRadius: '8px',
-                        display: 'inline-block',
-                        marginBottom: '1rem',
-                    }}
-                >
+                <div style={{
+                    padding: '1rem',
+                    border: '2px dashed rgba(24, 59, 78, 0.63)',
+                    borderRadius: '8px',
+                    display: 'inline-block',
+                    marginBottom: '2rem',
+                    maxWidth: '70%',
+                    textAlign: 'center',
+                    margin: '1rem',
+                }}>
                     <Image
                         src="./me.jpg"
                         alt="Joe Wang"
+                        layout="responsive"
                         width={300}
                         height={300}
-                        style={{ height: 'auto' }}
                     />
                 </div>
 
@@ -106,40 +107,42 @@ export default function Home() {
                     </div>
                 </div>
 
-                {/* Buddy Box Section */}
-                <div className="buddy-box" style={{ marginTop: '-1rem', textAlign: 'center' }}>
-                    <p style={{ marginBottom: '-0.8rem' }}><FaUser /> Buddy Box:</p>
-                    <ul style={{ listStyle: 'none', padding: 0 }}>
-                        <div className="buddy-box" style={{ marginTop: '-1rem', textAlign: 'center' }}>
-                            <div style={{
-                                display: 'grid',
-                                gridTemplateColumns: 'repeat(3, 1fr)',
-                                gap: '0.3rem',
-                                justifyItems: 'center',
-                                padding: '0.5rem'
+                {/* Buddy Box Section (Using Flexbox) */}
+                <div className="buddy-box-section" style={{ textAlign: 'center', marginTop: '1rem' }}>
+                    <p style={{ marginBottom: '0.5rem' }}><FaUser /> Buddy Box:</p>
+                    <div // <<<< THIS is the Flex Container
+                        style={{
+                            // Flexbox layout properties:
+                            display: 'flex',      // Use Flexbox
+                            flexWrap: 'wrap',     // Allow items to wrap to the next line
+                            justifyContent: 'center', // Center items horizontally on each line
+                            gap: '0.2rem',          // Space between items
+                            padding: '1rem',        // Padding inside the container
 
-                            }}>
-                                <a href="https://joewang.me" target="_blank" rel="noopener noreferrer">
-                                    <Image src="./buddy/button.png" alt="Joe" width={88} height={31} />
-                                </a>
-                                <a href="https://ocf.berkeley.edu" target="_blank" rel="noopener noreferrer">
-                                    <Image src="./buddy/ocf.png" alt="OCF" width={88} height={31} />
-                                </a>
-                                <a href="https://jaysa.net" target="_blank" rel="noopener noreferrer" style={{ marginBottom: '2rem', }}>
-                                    <Image src="./buddy/jaysa.jpg" alt="Jaysa" width={88} height={31} />
-                                </a>
+                            // Container sizing and centering (keep these):
+                            maxWidth: '90%',
+                            marginLeft: 'auto',
+                            marginRight: 'auto',
+                        }}
+                    >
+                        {/* Flex Items (Direct Children) - REMOVED inline-block style */}
+                        <a href="https://joewang.me" target="_blank" rel="noopener noreferrer">
+                            {/* Use your actual paths */}
+                            <Image src="/buddy/button.png" alt="Joe" width={88} height={31} style={{ display: 'block' }} />
+                        </a>
+                        <a href="https://ocf.berkeley.edu" target="_blank" rel="noopener noreferrer">
+                            <Image src="/buddy/ocf.png" alt="OCF" width={88} height={31} style={{ display: 'block' }} />
+                        </a>
+                        <a href="https://jaysa.net" target="_blank" rel="noopener noreferrer">
+                            <Image src="/buddy/jaysa.jpg" alt="Jaysa" width={88} height={31} style={{ display: 'block' }} />
+                        </a>
 
-                                {/* <a href="https://example-friend3.com" target="_blank" rel="noopener noreferrer">
-                                    <Image src="./buddy/jaysa.jpg" alt="nyxgirl" style={{ width: '88px', height: '33px' }} />
-                                </a> */}
-                                {/* Add more buddies as needed */}
-                            </div>
-                        </div>
+                        {/* Add more friends here - they will wrap */}
 
-                        {/* Add more friends below */}
-                    </ul>
+                    </div>
                 </div>
-            </main>
-        </div>
+                {/* End of Buddy Box Section */}
+            </main >
+        </div >
     );
 }

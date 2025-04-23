@@ -84,12 +84,15 @@ export default function About() {
                         borderRadius: '8px',
                         display: 'inline-block',
                         marginBottom: '2rem',
+                        maxWidth: '70%',
+                        textAlign: 'center',
                     }}>
                         <Image
                             src="/me-about.jpg"
                             alt="Joe Wang"
+                            layout="responsive"
                             width={300}
-                            height={400} // approximate height or adjust to match aspect ratio
+                            height={400}
                         />
                     </div>
                 </div>
