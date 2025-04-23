@@ -108,7 +108,7 @@ export default function Home() {
                 </div>
 
                 {/* Buddy Box Section (Using Flexbox) */}
-                <div className="buddy-box-section" style={{ textAlign: 'center', marginTop: '1rem' }}>
+                <div className="buddy-box-section" style={{ textAlign: 'center', marginTop: '-0.2rem' }}>
                     <p style={{ marginBottom: '0.5rem' }}><FaUser /> Buddy Box:</p>
                     <div // <<<< THIS is the Flex Container
                         style={{
@@ -123,6 +123,7 @@ export default function Home() {
                             maxWidth: '90%',
                             marginLeft: 'auto',
                             marginRight: 'auto',
+                            marginTop: '-1rem',
                         }}
                     >
                         {/* Flex Items (Direct Children) - REMOVED inline-block style */}
