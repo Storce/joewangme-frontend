@@ -14,7 +14,7 @@ export const metadata = {
         'Zezhou Wang',
         'UC Berkeley',
         'Computer Science',
-        'Systems Engineering'
+        'Systems Engineering',
         'software engineering',
         'Open Computing Facility',
         'Linux',
