@@ -11,13 +11,13 @@ export const metadata = {
         'I am Joe, a Computer Science student at UC Berkeley and General Manager at the Open Computing Facility. I am enthusiastic about Linux and computer infrastructure.',
     keywords: [
         'Joe Wang',
+        'Zezhou Wang',
         'UC Berkeley',
         'Computer Science',
+        'software engineering',
         'Open Computing Facility',
         'Linux',
-        'Computer Infrastructure',
-        'System Design',
-        'Brazil',
+        'Infrastructure',
         'Brazilian',
     ],
     metadataBase: new URL('https://joewang.me'),
@@ -44,7 +44,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body style={{ backgroundColor: '#F5EEDC', color: 'black' }}>
+            <body>
                 <Nav />
                 {children}
             </body>

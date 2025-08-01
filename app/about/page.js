@@ -1,101 +1,96 @@
-import Image from 'next/image';
+import css from "styled-jsx/css";
 
 export default function About() {
     return (
         <div
             style={{
                 backgroundImage: 'url("/background.png")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                minHeight: '100vh',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                padding: '0rem',
+                display: 'grid',
+                placeItems: 'center',
             }}
         >
-            <main className="mainContainer"
-                style={{
-                    backgroundColor: '#F5EEDC',
-                    boxShadow: '0 0 10px rgba(0,0,0,0.1)',
-                    maxWidth: '600px',
-                    width: '50%',
-                }} >
-                <div className="paragraph">
-                    <h1 className="heading1" style={{ marginBottom: '0.5rem' }}>About Me</h1>
-                    <p className="paragraph" style={{ marginBottom: '1rem' }}>
-                        I am a Computer Science student currently residing in the U.S., Berkeley, CA. I&apos;ve also lived in Shanghai (China) and São Paulo (Brazil) at different moments of my life. I speak fluent Portuguese, Mandarin, English, some intermediate Spanish, and Shanghainese.
-                    </p>
-                    <p className="paragraph" style={{ marginBottom: '1rem' }}>
-                        I am really into <b>Linux</b> and <b>computer systems and infrastructure</b>. I run my own homelab and teach a class on system administration. I also really like mathematics and have competed in olympiads at national levels. Some cool classes I&apos;ve enjoyed at Berkeley are EE120 Signal Processing, and EE122 Communication Networks.
-                    </p>
-                    <p className="paragraph" style={{ marginBottom: '1rem' }}>
-                        I do a lot of things for the{' '}
-                        <a
-                            href="https://ocf.io"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: '#27548A', textDecoration: 'none' }}
-                        >
-                            Open Computing Facility
-                        </a>{' '}
-                        (
-                        <a
-                            href="https://ocf.io/github"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: '#27548A', textDecoration: 'none' }}
-                        >
-                            Github
-                        </a>
-                        ), where I spend an unhealthy amount of time. At the OCF, we run a powerful Linux computer cluster serving 45K students and faculty at Berkeley. As of Spring 2025, I serve as the Co-General Manager, contributing both technically and administratively.
-                    </p>
-                    <p className="paragraph" style={{ marginBottom: '1rem' }}>
-                        In my spare time, I enjoy games like
-                        <a
-                            href="https://en.wikipedia.org/wiki/Stellaris_(video_game)"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: '#27548A', textDecoration: 'none', marginLeft: '0.3rem' }}
-                        >
-                            Stellaris
-                        </a>,
-                        <a
-                            href="https://starcraft2.blizzard.com/en-us/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: '#27548A', textDecoration: 'none', marginLeft: '0.3rem' }}
-                        >
-                            StarCraft II
-                        </a>, and
-                        <a
-                            href="https://terraria.org/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ color: '#27548A', textDecoration: 'none', marginLeft: '0.3rem' }}
-                        >
-                            Terraria
-                        </a>.
-                        I also love tennis, piano and cooking.
-                    </p>
-                    <div style={{
-                        padding: '1rem',
-                        border: '2px dashed rgba(24, 59, 78, 0.63)',
-                        borderRadius: '8px',
-                        display: 'inline-block',
-                        marginBottom: '2rem',
-                        maxWidth: '70%',
-                        textAlign: 'center',
-                    }}>
-                        <Image
-                            src="/me-about.jpg"
-                            alt="Joe Wang"
-                            layout="responsive"
-                            width={300}
-                            height={400}
-                        />
-                    </div>
-                </div>
+            <main className="main-container">
+                <h1>
+                    About Me
+                </h1>
+
+                <p className="centered-paragraph">
+                    I currently live in the San Francisco Bay Area, city of Berkeley (U.S.), where I go to college. I&apos;ve also lived in Shanghai (China) and São Paulo (Brazil) at different moments of my life. In addition to English, I speak Portuguese, Mandarin, and some intermediate Spanish.
+                </p>
+
+                <p className="centered-paragraph">
+                    I like Linux and System Engineering. I've built data pipelines at
+                    {' '}
+                    <a
+                        href="https://investors.stone.co/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social-link"
+                    >
+                        Stone
+                    </a>
+                    {' '}
+                    and cloud infrastructure at
+                    {' '}
+                    <a
+                        href="https://www.sigmacomputing.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social-link"
+                    >
+                        Sigma
+                    </a>
+                    . I am also a manager at the
+                    {' '}
+                    <a
+                        href="https://ocf.io"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social-link"
+                    >
+                        Open Computing Facility
+                    </a>
+                    , where I work on various campus
+                    {' '}
+                    <a
+                        href="https://github.com/ocf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social-link"
+                    >
+                        IT and compute services
+                    </a>
+                    {' '}.
+                </p>
+
+                <p className="centered-paragraph">
+                    In my spare time, I really enjoy cooking, and am considering starting a food blog (coming soon?). I'm fond of all type of racket sports, like tennis, badminton, and ping pong, though I don't consider myself a pro in any of them. I also play videos games, like
+                    {' '}
+                    <a
+                        href="https://en.wikipedia.org/wiki/Stellaris_(video_game)"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social-link spaced-link"
+                    >
+                        Stellaris
+                    </a>
+                    {' '} and
+                    {' '}
+                    <a
+                        href="https://starcraft2.blizzard.com/en-us/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="social-link spaced-link"
+                    >
+                        StarCraft II
+                    </a>
+                    .
+                </p>
+
+                <img className='portrait-image'
+                    src="/me-shush.jpg"
+                    alt="Joe Wang"
+                />
             </main>
         </div>
     );

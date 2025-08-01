@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { FaLinkedin, FaGithub, FaEnvelope, FaUser } from 'react-icons/fa';
 import CopyEmail from './components/CopyEmail';
 
@@ -7,140 +6,101 @@ export default function Home() {
         <div
             style={{
                 backgroundImage: 'url("/background.png")',
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                minHeight: '100vh',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                padding: '0rem',
+                display: 'grid',
+                placeItems: 'center',
             }}
         >
-            <main className="mainContainer"
-                style={{
-                    backgroundColor: '#F5EEDC',
-                    boxShadow: '0 0 10px rgba(0,0,0,0.1)',
-                    maxWidth: '600px',
-                    width: '50%',
-                }} >
-                <h1 style={{ marginBottom: '0.5rem', marginTop: '1.3rem' }}>Hi! I&apos;m Joe</h1>
-                <h2 className="italic-subtitles" style={{ marginTop: '0rem', marginBottom: '0rem' }}>
+            <main className="main-container">
+                <h1>
+                    Hi! I&apos;m Joe
+                </h1>
+
+                <p className="centered-paragraph"
+                    style={{
+                        fontStyle: 'italic',
+                        fontWeight: 400,
+                    }}>
                     I also go by Zezhou, and my username Storce.
-                </h2>
-                <p className="paragraph" style={{ marginBottom: '1rem', textAlign: 'center' }}>
-                    I am a Computer Science undergrad at UC Berkeley.
                 </p>
 
-                <div style={{
-                    padding: '1rem',
-                    border: '2px dashed rgba(24, 59, 78, 0.63)',
-                    borderRadius: '8px',
-                    display: 'inline-block',
-                    marginBottom: '2rem',
-                    maxWidth: '70%',
-                    textAlign: 'center',
-                    margin: '1rem',
-                }}>
-                    <Image
-                        src="./me.jpg"
-                        alt="Joe Wang"
-                        layout="responsive"
-                        width={300}
-                        height={300}
-                    />
-                </div>
+                <p className="centered-paragraph">
+                    I study Computer Science at UC Berkeley.
+                </p>
 
+                <img className='portrait-image'
+                    src="./me-cooking.jpg"
+                    alt="Joe Wang"
+                />
+
+                <p style={{ marginBottom: '-0.5rem' }}>
+                    <FaEnvelope /> Email:
+                </p>
+                <p className="social-link" style={{ marginBottom: '-0.5rem' }}>
+                    <CopyEmail email="joewangzz1028@gmail.com" />
+                </p>
+                <p className="social-link">
+                    <CopyEmail email="zezhou_wang@berkeley.edu" />
+                </p>
+
+                {/* Two columns for LinkedIn and GitHub */}
                 <div
-                    className="contact-box"
                     style={{
-                        marginTop: '-0.2rem',
                         display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
+                        justifyContent: 'space-around',
+                        gap: '2rem',
                     }}
                 >
                     <div style={{ textAlign: 'center' }}>
-                        <p style={{ marginBottom: '-0.5rem' }}><FaEnvelope /> Email:</p>
-                        <p className="paragraph" style={{ marginBottom: '-0.5rem' }}>
-                            <CopyEmail email="joewangzz1028@gmail.com" />
+                        <p style={{ marginBottom: '-0.7rem' }}>
+                            <FaLinkedin /> LinkedIn:
                         </p>
-                        <p className="paragraph" style={{ marginBottom: '0.8rem' }}>
-                            <CopyEmail email="zezhou_wang@berkeley.edu" />
+                        <p>
+                            <a
+                                href="https://www.linkedin.com/in/joseph-wang-zz/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-link"
+                            >
+                                joe-wang-zz
+                            </a>
                         </p>
+                    </div>
 
-                        <div
-                            style={{
-                                display: 'flex',
-                                justifyContent: 'center',
-                                gap: '1rem',
-                                flexWrap: 'wrap',
-                            }}
-                        >
-                            <div style={{ textAlign: 'center' }}>
-                                <p style={{ marginBottom: '-0.5rem' }}><FaLinkedin /> LinkedIn:</p>
-                                <p className="paragraph" style={{ marginBottom: '0.8rem' }}>
-                                    <a
-                                        href="https://www.linkedin.com/in/joseph-wang-zz/"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{ textDecoration: 'underline', color: "#000000" }}
-                                    >
-                                        Joe Wang
-                                    </a>
-                                </p>
-                            </div>
-
-                            <div style={{ textAlign: 'center' }}>
-                                <p style={{ marginBottom: '-0.5rem' }}><FaGithub /> GitHub:</p>
-                                <p className="paragraph" style={{ marginBottom: '1rem' }}>
-                                    <a
-                                        href="https://github.com/storce"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{ textDecoration: 'underline', color: "#000000" }}
-                                    >
-                                        storce
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
+                    <div style={{ textAlign: 'center' }}>
+                        <p style={{ marginBottom: '-0.7rem' }}>
+                            <FaGithub /> GitHub:
+                        </p>
+                        <p>
+                            <a
+                                href="https://github.com/storce"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="social-link"
+                            >
+                                storce
+                            </a>
+                        </p>
                     </div>
                 </div>
 
                 {/* Buddy Box Section (Using Flexbox) */}
-                <div className="buddy-box-section" style={{ textAlign: 'center', marginTop: '-0.2rem' }}>
-                    <p style={{ marginBottom: '0.5rem' }}><FaUser /> Buddy Box:</p>
-                    <div // <<<< THIS is the Flex Container
-                        style={{
-                            // Flexbox layout properties:
-                            display: 'flex',      // Use Flexbox
-                            flexWrap: 'wrap',     // Allow items to wrap to the next line
-                            justifyContent: 'center', // Center items horizontally on each line
-                            gap: '0.2rem',          // Space between items
-                            padding: '1rem',        // Padding inside the container
-
-                            // Container sizing and centering (keep these):
-                            maxWidth: '90%',
-                            marginLeft: 'auto',
-                            marginRight: 'auto',
-                            marginTop: '-1rem',
-                        }}
-                    >
-                        {/* Flex Items (Direct Children) - REMOVED inline-block style */}
-                        <a href="https://joewang.me" target="_blank" rel="noopener noreferrer">
-                            {/* Use your actual paths */}
-                            <Image src="/buddy/button.png" alt="Joe" width={88} height={31} style={{ display: 'block' }} />
-                        </a>
-                        <a href="https://ocf.berkeley.edu" target="_blank" rel="noopener noreferrer">
-                            <Image src="/buddy/ocf.png" alt="OCF" width={88} height={31} style={{ display: 'block' }} />
-                        </a>
-                        <a href="https://jaysa.net" target="_blank" rel="noopener noreferrer">
-                            <Image src="/buddy/jaysa.jpg" alt="Jaysa" width={88} height={31} style={{ display: 'block' }} />
-                        </a>
-
-                        {/* Add more friends here - they will wrap */}
-
-                    </div>
+                <p style={{ marginBottom: '0.5rem' }}><FaUser /> Buddy Box:</p>
+                <div className='buddy-box'>
+                    <a href="https://joewang.me" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/button.png" alt="Joe Wang" />
+                    </a>
+                    <a href="https://ocf.berkeley.edu" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/ocf.png" alt="OCF" />
+                    </a>
+                    <a href="https://jaysa.net" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/jaysa.jpg" alt="Jaysa Garcia" />
+                    </a>
+                    <a href="https://aly.sh" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/albert.png" alt="Albert Ye" />
+                    </a>
+                    <a href="https://jaysa.net" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/bencuan.gif" alt="Bencuan" />
+                    </a>
                 </div>
                 {/* End of Buddy Box Section */}
             </main >
