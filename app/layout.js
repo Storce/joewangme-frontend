@@ -8,17 +8,16 @@ export const metadata = {
         template: '%s | Joe Wang',
     },
     description:
-        'I am Joe, a Computer Science student at UC Berkeley and General Manager at the Open Computing Facility. I am enthusiastic about Linux and computer infrastructure.',
+        'I am Joe Wang. I study Computer Science at UC Berkeley.',
     keywords: [
         'Joe Wang',
         'Zezhou Wang',
         'UC Berkeley',
         'Computer Science',
+        'Systems Engineering'
         'software engineering',
         'Open Computing Facility',
         'Linux',
-        'Infrastructure',
-        'Brazilian',
     ],
     metadataBase: new URL('https://joewang.me'),
     alternates: {
@@ -27,7 +26,7 @@ export const metadata = {
     openGraph: {
         title: 'Joe Wang',
         description:
-            'I am Joe, a Computer Science student at UC Berkeley and General Manager at the Open Computing Facility. I am enthusiastic about Linux and computer infrastructure.',
+            'I am Joe Wang. I study Computer Science at UC Berkeley.',
         url: 'https://joewang.me',
         siteName: 'Joe Wang',
         locale: 'en_US',
