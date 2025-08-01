@@ -7,6 +7,7 @@ export default function About() {
                 backgroundImage: 'url("/background.png")',
                 display: 'grid',
                 placeItems: 'center',
+                backgroundSize: 'cover',
             }}
         >
             <main className="main-container">
