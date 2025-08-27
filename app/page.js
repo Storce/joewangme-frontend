@@ -99,9 +99,13 @@ export default function Home() {
                     <a href="https://aly.sh" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/albert.png" alt="Albert Ye" />
                     </a>
-                    <a href="https://jaysa.net" target="_blank" rel="noopener noreferrer">
+                    <a href="https://bencuan.me" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/bencuan.gif" alt="Bencuan" />
                     </a>
+	            <a href="https://kinn.dev" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/kinn.gif" alt="Kinn" />
+                    </a>
+		
                 </div>
                 {/* End of Buddy Box Section */}
             </main >
