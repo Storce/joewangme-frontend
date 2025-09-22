@@ -65,7 +65,7 @@ export default function About() {
                 </p>
 
                 <p className="centered-paragraph">
-                    In my spare time, I really enjoy cooking, and am considering starting a food blog (coming soon?). I'm fond of all type of racket sports, like tennis, badminton, and ping pong, though I don't consider myself a pro in any of them. I also play videos games, like
+                    In my spare time, I really enjoy cooking, and am considering starting a food blog (coming soon?). I'm fond of all type of racket sports, like tennis, badminton, and ping pong. I also play videos games, like
                     {' '}
                     <a
                         href="https://en.wikipedia.org/wiki/Stellaris_(video_game)"
