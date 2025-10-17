@@ -105,7 +105,9 @@ export default function Home() {
 	            <a href="https://kinn.dev" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/kinn.gif" alt="Kinn" />
                     </a>
-		
+		    <a href="https://giannacaudillo.myportfolio.com" target="_blank" rel="noopener noreferrer">
+		 	<img src="/buddy/gianna.gif" alt="Kinn" />
+		    </a>
                 </div>
                 {/* End of Buddy Box Section */}
             </main >
