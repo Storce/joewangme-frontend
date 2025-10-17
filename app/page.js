@@ -102,12 +102,18 @@ export default function Home() {
                     <a href="https://bencuan.me" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/bencuan.gif" alt="Bencuan" />
                     </a>
-	            <a href="https://kinn.dev" target="_blank" rel="noopener noreferrer">
+   	                <a href="https://kinn.dev" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/kinn.gif" alt="Kinn" />
                     </a>
-		    <a href="https://giannacaudillo.myportfolio.com" target="_blank" rel="noopener noreferrer">
-		 	<img src="/buddy/gianna.gif" alt="Kinn" />
-		    </a>
+                     <a href="https://brookemao.ca" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/brooke.png" alt="Brooke" />
+                    </a>
+                    <a href="https://trinityjchung.com/yolkgirl/" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/trinity.gif" alt="Trinty" />
+                    </a>
+                    <a href="https://chenghao.li" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/chenghao.png" alt="Chenghao" />
+                    </a>
                 </div>
                 {/* End of Buddy Box Section */}
             </main >
