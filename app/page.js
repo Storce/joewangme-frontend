@@ -114,6 +114,9 @@ export default function Home() {
                     <a href="https://chenghao.li" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/chenghao.png" alt="Chenghao" />
                     </a>
+                    <a href="https://giannacaudillo.myportfolio.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/gianna.gif" alt="Gianna" />
+                    </a>
                 </div>
                 {/* End of Buddy Box Section */}
             </main >
