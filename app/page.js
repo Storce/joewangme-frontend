@@ -105,7 +105,10 @@ export default function Home() {
    	                <a href="https://kinn.dev" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/kinn.gif" alt="Kinn" />
                     </a>
-                     <a href="https://brookemao.ca" target="_blank" rel="noopener noreferrer">
+                    <a href="https://sawansri.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/sawan.png" alt="Sawan" />
+                    </a>
+	    		<a href="https://brookemao.ca" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/brooke.png" alt="Brooke" />
                     </a>
                     <a href="https://trinityjchung.com/yolkgirl/" target="_blank" rel="noopener noreferrer">
