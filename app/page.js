@@ -111,6 +111,9 @@ export default function Home() {
 	    		<a href="https://brookemao.ca" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/brooke.png" alt="Brooke" />
                     </a>
+                    <a href="https://erdaifuu.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/carl.gif" alt="Carl" />
+                    </a>
                     <a href="https://trinityjchung.com/yolkgirl/" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/trinity.gif" alt="Trinty" />
                     </a>
