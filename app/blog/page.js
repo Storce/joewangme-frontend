@@ -19,7 +19,7 @@ export default function Blog() {
                 
                 <div style={{ width: '100%' }}>
                     {posts.length === 0 ? (
-                        <p className="centered-paragraph">Joe has been lazy, check back sometime!</p>
+                        <p className="centered-paragraph">Joe has been lazy, check back in some time!</p>
                     ) : (
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                             {posts.map((post) => (
