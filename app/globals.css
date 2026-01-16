@@ -4,7 +4,7 @@
 :root {
   /* Color palette */
   --color-secondary: #F7BC45;
-  --color-accent: #DCA561;
+  --color-accent: #916d40;
   --color-accent-dark: #223249;
   --color-background: #DCD7BA;
   --color-background-dark: #C8C093;
@@ -128,4 +128,41 @@ nav a:hover {
   to {
     opacity: 0;
   }
+}
+
+/* Styles for markdown-rendered about content */
+.about-content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-content p {
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: var(--color-foreground);
+}
+
+.about-content a {
+  color: var(--color-primary, var(--color-accent));
+  text-decoration: underline;
+  transition: background-color 0.3s ease;
+}
+
+.about-content a:hover {
+  background-color: var(--color-background-dark);
+  color: var(--blue);
+}
+
+.about-content img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(24, 59, 78, 0.63);
+  padding: 1rem;
+  width: 60%;
+  margin: 1rem auto;
+  border-radius: inherit;
 }

@@ -13,7 +13,7 @@ export default function Home() {
         >
             <main className="main-container">
                 <h1>
-                    Hi! I&apos;m Joe
+                    Welcome to Joe-land
                 </h1>
 
                 <p className="centered-paragraph"
@@ -21,7 +21,7 @@ export default function Home() {
                         fontStyle: 'italic',
                         fontWeight: 400,
                     }}>
-                    I also go by Zezhou, and my username Storce.
+                    You might also know me by Zezhou, or Storce.
                 </p>
 
                 <p className="centered-paragraph">
@@ -34,7 +34,7 @@ export default function Home() {
                 />
 
                 <p style={{ marginBottom: '-0.5rem' }}>
-                    <FaEnvelope /> Email:
+                    <FaEnvelope /> Shoot a message:
                 </p>
                 <p className="social-link" style={{ marginBottom: '-0.5rem' }}>
                     <CopyEmail email="joewangzz1028@gmail.com" />
@@ -53,7 +53,7 @@ export default function Home() {
                 >
                     <div style={{ textAlign: 'center' }}>
                         <p style={{ marginBottom: '-0.7rem' }}>
-                            <FaLinkedin /> LinkedIn:
+                            <FaLinkedin /> Check me out:
                         </p>
                         <p>
                             <a
@@ -69,7 +69,7 @@ export default function Home() {
 
                     <div style={{ textAlign: 'center' }}>
                         <p style={{ marginBottom: '-0.7rem' }}>
-                            <FaGithub /> GitHub:
+                            <FaGithub /> Read my slop:
                         </p>
                         <p>
                             <a
@@ -85,7 +85,7 @@ export default function Home() {
                 </div>
 
                 {/* Buddy Box Section (Using Flexbox) */}
-                <p style={{ marginBottom: '0.5rem' }}><FaUser /> Buddy Box:</p>
+                <p style={{ marginBottom: '0.5rem' }}><FaUser /> My Buddies! :D</p>
                 <div className='buddy-box'>
                     <a href="https://joewang.me" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/button.png" alt="Joe Wang" />

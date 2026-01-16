@@ -1,5 +1,6 @@
 import './globals.css';
 import Nav from './components/Nav'; // adjust path if needed
+import PageTransition from './components/PageTransition';
 
 
 export const metadata = {
@@ -45,7 +46,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body>
                 <Nav />
-                {children}
+                <PageTransition>{children}</PageTransition>
             </body>
         </html>
     );
