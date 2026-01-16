@@ -1,1 +1,97 @@
-import { notFound } from 'next/navigation';\nimport Link from 'next/link';\nimport { getPostData, getAllPostIds } from '../../../lib/blogs';\nimport { remark } from 'remark';\nimport html from 'remark-html';\n\nexport async function generateStaticParams() {\n    const posts = getAllPostIds();\n    return posts.map((post) => ({\n        id: post.params.id,\n    }));\n}\n\nexport async function generateMetadata({ params }) {\n    const postData = await getPostData(params.id);\n    \n    if (!postData) {\n        return {\n            title: 'Post Not Found',\n        };\n    }\n\n    return {\n        title: `${postData.title} | Joe Wang`,\n        description: postData.description || 'A blog post by Joe Wang',\n    };\n}\n\nexport default async function BlogPost({ params }) {\n    const postData = await getPostData(params.id);\n    \n    if (!postData) {\n        notFound();\n    }\n\n    // Process markdown content\n    const processedContent = await remark()\n        .use(html)\n        .process(postData.content);\n    const contentHtml = processedContent.toString();\n\n    return (\n        <div\n            style={{\n                backgroundImage: 'url(\"/background.png\")',\n                display: 'grid',\n                placeItems: 'center',\n                backgroundSize: 'cover',\n                minHeight: '100vh',\n            }}\n        >\n            <main className=\"main-container\">\n                <Link\n                    href=\"/blog\"\n                    style={{\n                        color: 'var(--color-accent)',\n                        textDecoration: 'none',\n                        marginBottom: '2rem',\n                        display: 'inline-block',\n                    }}\n                >\n                    ← Back to Blog\n                </Link>\n                \n                <article style={{ width: '100%' }}>\n                    <header style={{ marginBottom: '2rem', textAlign: 'center' }}>\n                        <h1>{postData.title}</h1>\n                        {postData.date && (\n                            <p\n                                style={{\n                                    fontSize: '1rem',\n                                    color: 'var(--color-foreground-light)',\n                                    fontStyle: 'italic',\n                                }}\n                            >\n                                {new Date(postData.date).toLocaleDateString('en-US', {\n                                    year: 'numeric',\n                                    month: 'long',\n                                    day: 'numeric',\n                                })}\n                            </p>\n                        )}\n                    </header>\n                    \n                    <div\n                        className=\"about-content\"\n                        dangerouslySetInnerHTML={{ __html: contentHtml }}\n                        style={{\n                            lineHeight: '1.8',\n                            fontSize: '1.1rem',\n                        }}\n                    />\n                </article>\n            </main>\n        </div>\n    );\n}
+import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { getPostData, getAllPostIds } from '../../../lib/blogs';
+import { remark } from 'remark';
+import html from 'remark-html';
+
+export async function generateStaticParams() {
+    const posts = getAllPostIds();
+    return posts.map((post) => ({
+        id: post.params.id,
+    }));
+}
+
+export async function generateMetadata({ params }) {
+    const postData = await getPostData(params.id);
+    
+    if (!postData) {
+        return {
+            title: 'Post Not Found',
+        };
+    }
+
+    return {
+        title: `${postData.title} | Joe Wang`,
+        description: postData.description || 'A blog post by Joe Wang',
+    };
+}
+
+export default async function BlogPost({ params }) {
+    const postData = await getPostData(params.id);
+    
+    if (!postData) {
+        notFound();
+    }
+
+    // Process markdown content
+    const processedContent = await remark()
+        .use(html)
+        .process(postData.content);
+    const contentHtml = processedContent.toString();
+
+    return (
+        <div
+            style={{
+                backgroundImage: 'url("/background.png")',
+                display: 'grid',
+                placeItems: 'center',
+                backgroundSize: 'cover',
+                minHeight: '100vh',
+            }}
+        >
+            <main className="main-container">
+                <Link
+                    href="/blog"
+                    style={{
+                        color: 'var(--color-accent)',
+                        textDecoration: 'none',
+                        marginBottom: '2rem',
+                        display: 'inline-block',
+                    }}
+                >
+                    ← Back to Blog
+                </Link>
+                
+                <article style={{ width: '100%' }}>
+                    <header style={{ marginBottom: '2rem', textAlign: 'center' }}>
+                        <h1>{postData.title}</h1>
+                        {postData.date && (
+                            <p
+                                style={{
+                                    fontSize: '1rem',
+                                    color: 'var(--color-foreground-light)',
+                                    fontStyle: 'italic',
+                                }}
+                            >
+                                {new Date(postData.date).toLocaleDateString('en-US', {
+                                    year: 'numeric',
+                                    month: 'long',
+                                    day: 'numeric',
+                                })}
+                            </p>
+                        )}
+                    </header>
+                    
+                    <div
+                        className="about-content"
+                        dangerouslySetInnerHTML={{ __html: contentHtml }}
+                        style={{
+                            lineHeight: '1.8',
+                            fontSize: '1.1rem',
+                        }}
+                    />
+                </article>
+            </main>
+        </div>
+    );
+}
