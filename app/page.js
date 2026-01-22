@@ -120,8 +120,11 @@ export default function Home() {
                     <a href="https://chenghao.li" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/chenghao.png" alt="Chenghao" />
                     </a>
-                    <a href="https://rsang.ne" target="_blank" rel="noopener noreferrer">
+                    <a href="https://rsang.net" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/rsang.png" alt="Rsang" />
+                    </a>
+                    <a href="https://lukegonsalves.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/luke.png" alt="Rsang" />
                     </a>
                 </div>
                 {/* End of Buddy Box Section */}
