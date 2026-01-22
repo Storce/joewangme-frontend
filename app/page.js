@@ -85,7 +85,7 @@ export default function Home() {
                 </div>
 
                 {/* Buddy Box Section (Using Flexbox) */}
-                <p style={{ marginBottom: '0.5rem' }}><FaUser /> My Buddies! :D</p>
+                <p style={{ marginBottom: '0.2rem' }}><FaUser /> My Buddies! :D</p>
                 <div className='buddy-box'>
                     <a href="https://joewang.me" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/button.png" alt="Joe Wang" />
