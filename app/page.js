@@ -124,7 +124,10 @@ export default function Home() {
                         <img src="/buddy/rsang.png" alt="Rsang" />
                     </a>
                     <a href="https://lukegonsalves.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/buddy/luke.png" alt="Rsang" />
+                        <img src="/buddy/luke.png" alt="Luke" />
+                    </a>
+                    <a href="https://minasonmez.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/mina.gif" alt="Mina" />
                     </a>
                 </div>
                 {/* End of Buddy Box Section */}
