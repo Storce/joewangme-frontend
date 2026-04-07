@@ -129,6 +129,15 @@ export default function Home() {
                     <a href="https://minasonmez.com" target="_blank" rel="noopener noreferrer">
                         <img src="/buddy/mina.gif" alt="Mina" />
                     </a>
+                    <a href="https://anna.dymchenko.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/anna.png" alt="Anna" />
+                    </a>
+                    <a href="https://michaellisano.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/michael.gif" alt="MichaelL" />
+                    </a>
+                    <a href="https://blakehaug.com" target="_blank" rel="noopener noreferrer">
+                        <img src="/buddy/blakeh.gif" alt="BlakeH" />
+                    </a>
                 </div>
                 {/* End of Buddy Box Section */}
             </main >
